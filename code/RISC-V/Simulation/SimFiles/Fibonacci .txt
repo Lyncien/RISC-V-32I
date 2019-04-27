@@ -1,0 +1,39 @@
+
+Fibonacci.om:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00010054 <_start>:
+   10054:	00000537          	lui	a0,0x0
+   10058:	40050113          	addi	sp,a0,1024 # 400 <_start-0xfc54>
+   1005c:	00806293          	ori	t0,zero,8
+   10060:	00c000ef          	jal	ra,1006c <Fibonacci>
+   10064:	00652023          	sw	t1,0(a0)
+
+00010068 <infinity_loop>:
+   10068:	0000006f          	j	10068 <infinity_loop>
+
+0001006c <Fibonacci>:
+   1006c:	00306e93          	ori	t4,zero,3
+   10070:	01d2f663          	bleu	t4,t0,1007c <tag>
+   10074:	0002e313          	ori	t1,t0,0
+   10078:	00008067          	ret
+
+0001007c <tag>:
+   1007c:	fff28293          	addi	t0,t0,-1
+   10080:	ffc10113          	addi	sp,sp,-4
+   10084:	00112023          	sw	ra,0(sp)
+   10088:	ffc10113          	addi	sp,sp,-4
+   1008c:	00512023          	sw	t0,0(sp)
+   10090:	fddff0ef          	jal	ra,1006c <Fibonacci>
+   10094:	00012283          	lw	t0,0(sp)
+   10098:	fff28293          	addi	t0,t0,-1
+   1009c:	00612023          	sw	t1,0(sp)
+   100a0:	fcdff0ef          	jal	ra,1006c <Fibonacci>
+   100a4:	00012383          	lw	t2,0(sp)
+   100a8:	00410113          	addi	sp,sp,4
+   100ac:	00730333          	add	t1,t1,t2
+   100b0:	00012083          	lw	ra,0(sp)
+   100b4:	00410113          	addi	sp,sp,4
+   100b8:	00008067          	ret

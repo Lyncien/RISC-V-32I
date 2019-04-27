@@ -1,0 +1,140 @@
+
+QuickSort.om:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00010054 <_start>:
+   10054:	00000537          	lui	a0,0x0
+   10058:	40050113          	addi	sp,a0,1024 # 400 <_start-0xfc54>
+   1005c:	00056633          	or	a2,a0,zero
+   10060:	ffd00293          	li	t0,-3
+   10064:	00562023          	sw	t0,0(a2)
+   10068:	00460613          	addi	a2,a2,4
+   1006c:	ff900293          	li	t0,-7
+   10070:	00562023          	sw	t0,0(a2)
+   10074:	00460613          	addi	a2,a2,4
+   10078:	00600293          	li	t0,6
+   1007c:	00562023          	sw	t0,0(a2)
+   10080:	00460613          	addi	a2,a2,4
+   10084:	00500293          	li	t0,5
+   10088:	00562023          	sw	t0,0(a2)
+   1008c:	00460613          	addi	a2,a2,4
+   10090:	ffe00293          	li	t0,-2
+   10094:	00562023          	sw	t0,0(a2)
+   10098:	00460613          	addi	a2,a2,4
+   1009c:	00200293          	li	t0,2
+   100a0:	00562023          	sw	t0,0(a2)
+   100a4:	00460613          	addi	a2,a2,4
+   100a8:	ff700293          	li	t0,-9
+   100ac:	00562023          	sw	t0,0(a2)
+   100b0:	00460613          	addi	a2,a2,4
+   100b4:	ffc00293          	li	t0,-4
+   100b8:	00562023          	sw	t0,0(a2)
+   100bc:	00460613          	addi	a2,a2,4
+   100c0:	ffa00293          	li	t0,-6
+   100c4:	00562023          	sw	t0,0(a2)
+   100c8:	00460613          	addi	a2,a2,4
+   100cc:	00800293          	li	t0,8
+   100d0:	00562023          	sw	t0,0(a2)
+   100d4:	00460613          	addi	a2,a2,4
+   100d8:	00100293          	li	t0,1
+   100dc:	00562023          	sw	t0,0(a2)
+   100e0:	00460613          	addi	a2,a2,4
+   100e4:	ffb00293          	li	t0,-5
+   100e8:	00562023          	sw	t0,0(a2)
+   100ec:	00460613          	addi	a2,a2,4
+   100f0:	00700293          	li	t0,7
+   100f4:	00562023          	sw	t0,0(a2)
+   100f8:	00460613          	addi	a2,a2,4
+   100fc:	00000293          	li	t0,0
+   10100:	00562023          	sw	t0,0(a2)
+   10104:	00460613          	addi	a2,a2,4
+   10108:	00300293          	li	t0,3
+   1010c:	00562023          	sw	t0,0(a2)
+   10110:	00460613          	addi	a2,a2,4
+   10114:	fff00293          	li	t0,-1
+   10118:	00562023          	sw	t0,0(a2)
+   1011c:	00460613          	addi	a2,a2,4
+   10120:	00400293          	li	t0,4
+   10124:	00562023          	sw	t0,0(a2)
+   10128:	00460613          	addi	a2,a2,4
+   1012c:	00900293          	li	t0,9
+   10130:	00562023          	sw	t0,0(a2)
+   10134:	00460613          	addi	a2,a2,4
+   10138:	ff800293          	li	t0,-8
+   1013c:	00562023          	sw	t0,0(a2)
+   10140:	000065b3          	or	a1,zero,zero
+   10144:	40a60633          	sub	a2,a2,a0
+   10148:	008000ef          	jal	ra,10150 <QuickSort>
+
+0001014c <infinity_loop>:
+   1014c:	0000006f          	j	1014c <infinity_loop>
+
+00010150 <QuickSort>:
+   10150:	0cc5da63          	ble	a2,a1,10224 <QuickSortReturn>
+   10154:	0005e333          	or	t1,a1,zero
+   10158:	000663b3          	or	t2,a2,zero
+   1015c:	006502b3          	add	t0,a0,t1
+   10160:	0002a283          	lw	t0,0(t0)
+
+00010164 <PartationFirstStart>:
+   10164:	04735263          	ble	t2,t1,101a8 <PartationEnd>
+   10168:	00750e33          	add	t3,a0,t2
+   1016c:	000e2e03          	lw	t3,0(t3)
+   10170:	005e4663          	blt	t3,t0,1017c <PartationFirstEnd>
+   10174:	ffc38393          	addi	t2,t2,-4
+   10178:	fedff06f          	j	10164 <PartationFirstStart>
+
+0001017c <PartationFirstEnd>:
+   1017c:	00650eb3          	add	t4,a0,t1
+   10180:	01cea023          	sw	t3,0(t4)
+
+00010184 <PartationSecondStart>:
+   10184:	02735263          	ble	t2,t1,101a8 <PartationEnd>
+   10188:	00650e33          	add	t3,a0,t1
+   1018c:	000e2e03          	lw	t3,0(t3)
+   10190:	01c2c663          	blt	t0,t3,1019c <PartationSecondEnd>
+   10194:	00430313          	addi	t1,t1,4
+   10198:	fedff06f          	j	10184 <PartationSecondStart>
+
+0001019c <PartationSecondEnd>:
+   1019c:	00750eb3          	add	t4,a0,t2
+   101a0:	01cea023          	sw	t3,0(t4)
+   101a4:	fc7340e3          	blt	t1,t2,10164 <PartationFirstStart>
+
+000101a8 <PartationEnd>:
+   101a8:	00650eb3          	add	t4,a0,t1
+   101ac:	005ea023          	sw	t0,0(t4)
+   101b0:	ffc10113          	addi	sp,sp,-4
+   101b4:	00112023          	sw	ra,0(sp)
+   101b8:	ffc10113          	addi	sp,sp,-4
+   101bc:	00b12023          	sw	a1,0(sp)
+   101c0:	ffc10113          	addi	sp,sp,-4
+   101c4:	00c12023          	sw	a2,0(sp)
+   101c8:	ffc10113          	addi	sp,sp,-4
+   101cc:	00612023          	sw	t1,0(sp)
+   101d0:	ffc30613          	addi	a2,t1,-4
+   101d4:	f7dff0ef          	jal	ra,10150 <QuickSort>
+   101d8:	00012303          	lw	t1,0(sp)
+   101dc:	00410113          	addi	sp,sp,4
+   101e0:	00012603          	lw	a2,0(sp)
+   101e4:	00410113          	addi	sp,sp,4
+   101e8:	00012583          	lw	a1,0(sp)
+   101ec:	ffc10113          	addi	sp,sp,-4
+   101f0:	00c12023          	sw	a2,0(sp)
+   101f4:	ffc10113          	addi	sp,sp,-4
+   101f8:	00612023          	sw	t1,0(sp)
+   101fc:	00430593          	addi	a1,t1,4
+   10200:	f51ff0ef          	jal	ra,10150 <QuickSort>
+   10204:	00012303          	lw	t1,0(sp)
+   10208:	00410113          	addi	sp,sp,4
+   1020c:	00012603          	lw	a2,0(sp)
+   10210:	00410113          	addi	sp,sp,4
+   10214:	00012583          	lw	a1,0(sp)
+   10218:	00410113          	addi	sp,sp,4
+   1021c:	00012083          	lw	ra,0(sp)
+   10220:	00410113          	addi	sp,sp,4
+
+00010224 <QuickSortReturn>:
+   10224:	00008067          	ret

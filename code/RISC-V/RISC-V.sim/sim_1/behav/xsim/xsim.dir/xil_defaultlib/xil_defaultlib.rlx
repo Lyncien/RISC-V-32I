@@ -1,0 +1,23 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+E:/RISC-V/RISC-V/Core/ALU.v,1553936647,verilog,,E:/RISC-V/RISC-V/Core/BranchDecisionMaking.v,E:/RISC-V/RISC-V/Core/Parameters.v,ALU,,,,,,,,
+E:/RISC-V/RISC-V/Core/BRAMModule/DataRam.v,1553742485,verilog,,E:/RISC-V/RISC-V/Core/EXSegReg.v,,DataRam,,,,,,,,
+E:/RISC-V/RISC-V/Core/BRAMModule/InstructionRam.v,1552790140,verilog,,E:/RISC-V/RISC-V/Core/MEMSegReg.v,,InstructionRam,,,,,,,,
+E:/RISC-V/RISC-V/Core/BranchDecisionMaking.v,1554292230,verilog,,E:/RISC-V/RISC-V/Core/ControlUnit.v,E:/RISC-V/RISC-V/Core/Parameters.v,BranchDecisionMaking,,,,,,,,
+E:/RISC-V/RISC-V/Core/ControlUnit.v,1554968854,verilog,,E:/RISC-V/RISC-V/Core/DataExt.v,E:/RISC-V/RISC-V/Core/Parameters.v,ControlUnit,,,,,,,,
+E:/RISC-V/RISC-V/Core/DataExt.v,1553085320,verilog,,E:/RISC-V/RISC-V/Core/BRAMModule/DataRam.v,E:/RISC-V/RISC-V/Core/Parameters.v,DataExt,,,,,,,,
+E:/RISC-V/RISC-V/Core/EXSegReg.v,1552790140,verilog,,E:/RISC-V/RISC-V/Core/HarzardUnit.v,,EXSegReg,,,,,,,,
+E:/RISC-V/RISC-V/Core/HarzardUnit.v,1554005961,verilog,,E:/RISC-V/RISC-V/Core/IDSegReg.v,E:/RISC-V/RISC-V/Core/Parameters.v,HarzardUnit,,,,,,,,
+E:/RISC-V/RISC-V/Core/IDSegReg.v,1553868864,verilog,,E:/RISC-V/RISC-V/Core/IFSegReg.v,,IDSegReg,,,,,,,,
+E:/RISC-V/RISC-V/Core/IFSegReg.v,1552790140,verilog,,E:/RISC-V/RISC-V/Core/ImmOperandUnit.v,,IFSegReg,,,,,,,,
+E:/RISC-V/RISC-V/Core/ImmOperandUnit.v,1553763660,verilog,,E:/RISC-V/RISC-V/Core/BRAMModule/InstructionRam.v,E:/RISC-V/RISC-V/Core/Parameters.v,ImmOperandUnit,,,,,,,,
+E:/RISC-V/RISC-V/Core/MEMSegReg.v,1554306614,verilog,,E:/RISC-V/RISC-V/Core/NPC_Generator.v,,MEMSegReg,,,,,,,,
+E:/RISC-V/RISC-V/Core/NPC_Generator.v,1553958410,verilog,,E:/RISC-V/RISC-V/Core/RV32Core.v,,NPC_Generator,,,,,,,,
+E:/RISC-V/RISC-V/Core/Parameters.v,1554308563,verilog,,,,,,,,,,,,
+E:/RISC-V/RISC-V/Core/RV32Core.v,1552790140,verilog,,E:/RISC-V/RISC-V/Core/RegisterFile.v,,RV32Core,,,,,,,,
+E:/RISC-V/RISC-V/Core/RegisterFile.v,1552790140,verilog,,E:/RISC-V/RISC-V/Core/WBSegReg.v,,RegisterFile,,,,,,,,
+E:/RISC-V/RISC-V/Core/WBSegReg.v,1554343705,verilog,,E:/RISC-V/RISC-V/Simulation/testBench.v,,WBSegReg,,,,,,,,
+E:/RISC-V/RISC-V/RISC-V.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+E:/RISC-V/RISC-V/Simulation/testBench.v,1556260785,verilog,,,,testBench,,,,,,,,

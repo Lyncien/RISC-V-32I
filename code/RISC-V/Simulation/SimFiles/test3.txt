@@ -1,0 +1,4 @@
+"abcd"
+"abbaba"
+"aabcaabdaab"
+"aaaaa"

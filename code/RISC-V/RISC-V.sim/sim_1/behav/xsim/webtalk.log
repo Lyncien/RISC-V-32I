@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Apr 26 14:34:00 2019
+# Process ID: 11276
+# Current directory: E:/RISC-V/RISC-V/RISC-V.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source E:/RISC-V/RISC-V/RISC-V.sim/sim_1/behav/xsim/xsim.dir/testBench_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: E:/RISC-V/RISC-V/RISC-V.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: E:/RISC-V/RISC-V/RISC-V.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source E:/RISC-V/RISC-V/RISC-V.sim/sim_1/behav/xsim/xsim.dir/testBench_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'E:/RISC-V/RISC-V/RISC-V.sim/sim_1/behav/xsim/xsim.dir/testBench_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Apr 26 14:34:04 2019. For additional details about this file, please refer to the WebTalk help file at F:/Xilinx/Vivado/2017.4/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri Apr 26 14:34:04 2019...

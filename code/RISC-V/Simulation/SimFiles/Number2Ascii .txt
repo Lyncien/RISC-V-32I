@@ -1,0 +1,62 @@
+
+Number2Ascii.om:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00010054 <_start>:
+   10054:	57306513          	ori	a0,zero,1395
+   10058:	00a50533          	add	a0,a0,a0
+   1005c:	00a50533          	add	a0,a0,a0
+   10060:	010000ef          	jal	ra,10070 <Number2DecimalAscii>
+   10064:	000002b7          	lui	t0,0x0
+   10068:	00a2a023          	sw	a0,0(t0) # 0 <_start-0x10054>
+
+0001006c <infinity_loop>:
+   1006c:	0000006f          	j	1006c <infinity_loop>
+
+00010070 <Number2DecimalAscii>:
+   10070:	01fff2b7          	lui	t0,0x1fff
+   10074:	00c2d293          	srli	t0,t0,0xc
+   10078:	005572b3          	and	t0,a0,t0
+   1007c:	30303537          	lui	a0,0x30303
+   10080:	03056513          	ori	a0,a0,48
+   10084:	3e806313          	ori	t1,zero,1000
+
+00010088 <thousand>:
+   10088:	0062e863          	bltu	t0,t1,10098 <thousand_next>
+   1008c:	c1828293          	addi	t0,t0,-1000 # 1ffec18 <__global_pointer$+0x1fed338>
+   10090:	00150513          	addi	a0,a0,1 # 30303001 <__global_pointer$+0x302f1721>
+   10094:	ff5ff06f          	j	10088 <thousand>
+
+00010098 <thousand_next>:
+   10098:	06406313          	ori	t1,zero,100
+
+0001009c <hundred>:
+   1009c:	0062e863          	bltu	t0,t1,100ac <hundred_next>
+   100a0:	f9c28293          	addi	t0,t0,-100
+   100a4:	10050513          	addi	a0,a0,256
+   100a8:	ff5ff06f          	j	1009c <hundred>
+
+000100ac <hundred_next>:
+   100ac:	000103b7          	lui	t2,0x10
+   100b0:	00a06313          	ori	t1,zero,10
+
+000100b4 <ten>:
+   100b4:	0062e863          	bltu	t0,t1,100c4 <ten_next>
+   100b8:	ff628293          	addi	t0,t0,-10
+   100bc:	00750533          	add	a0,a0,t2
+   100c0:	ff5ff06f          	j	100b4 <ten>
+
+000100c4 <ten_next>:
+   100c4:	010003b7          	lui	t2,0x1000
+   100c8:	00106313          	ori	t1,zero,1
+
+000100cc <one>:
+   100cc:	0062e863          	bltu	t0,t1,100dc <one_next>
+   100d0:	fff28293          	addi	t0,t0,-1
+   100d4:	00750533          	add	a0,a0,t2
+   100d8:	ff5ff06f          	j	100cc <one>
+
+000100dc <one_next>:
+   100dc:	00008067          	ret

@@ -1,0 +1,34 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/RISC-V/RISC-V/Core/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/RISC-V/RISC-V/Core/BranchDecisionMaking.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchDecisionMaking
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/RISC-V/RISC-V/Core/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/RISC-V/RISC-V/Core/DataExt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataExt
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/RISC-V/RISC-V/Core/BRAMModule/DataRam.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataRam
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/RISC-V/RISC-V/Core/EXSegReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXSegReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/RISC-V/RISC-V/Core/HarzardUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HarzardUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/RISC-V/RISC-V/Core/IDSegReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDSegReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/RISC-V/RISC-V/Core/IFSegReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFSegReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/RISC-V/RISC-V/Core/ImmOperandUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmOperandUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/RISC-V/RISC-V/Core/BRAMModule/InstructionRam.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionRam
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/RISC-V/RISC-V/Core/MEMSegReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMSegReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/RISC-V/RISC-V/Core/NPC_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/RISC-V/RISC-V/Core/RV32Core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32Core
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/RISC-V/RISC-V/Core/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/RISC-V/RISC-V/Core/WBSegReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WBSegReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/RISC-V/RISC-V/Simulation/testBench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testBench
