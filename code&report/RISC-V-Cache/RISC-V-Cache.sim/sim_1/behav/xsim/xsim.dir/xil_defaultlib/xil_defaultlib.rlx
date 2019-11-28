@@ -1,0 +1,24 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+E:/RISC-V/RISC-V-Cache/RISC-V-Cache.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,xil_defaultlib,,,,,,
+E:/RISC-V/RISC-V-Cache/Src/Testbench/cpu_tb.v,1557787648,verilog,,,,cpu_tb,,xil_defaultlib,F:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+E:/RISC-V/RISC-V-Cache/Src/Verilog/ALU.v,1557787648,verilog,,E:/RISC-V/RISC-V-Cache/Src/Verilog/ControlUnit.v,E:/RISC-V/RISC-V-Cache/Src/Verilog/Parameters.v,ALU,,xil_defaultlib,F:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+E:/RISC-V/RISC-V-Cache/Src/Verilog/ControlUnit.v,1557787648,verilog,,E:/RISC-V/RISC-V-Cache/Src/Verilog/DataExt.v,E:/RISC-V/RISC-V-Cache/Src/Verilog/Parameters.v,ControlUnit,,xil_defaultlib,F:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+E:/RISC-V/RISC-V-Cache/Src/Verilog/DataExt.v,1557787648,verilog,,E:/RISC-V/RISC-V-Cache/Src/Verilog/EXSegReg.v,E:/RISC-V/RISC-V-Cache/Src/Verilog/Parameters.v,DataExt,,xil_defaultlib,F:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+E:/RISC-V/RISC-V-Cache/Src/Verilog/EXSegReg.v,1557787648,verilog,,E:/RISC-V/RISC-V-Cache/Src/Verilog/HarzardUnit.v,,EXSegReg,,xil_defaultlib,F:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+E:/RISC-V/RISC-V-Cache/Src/Verilog/HarzardUnit.v,1557787648,verilog,,E:/RISC-V/RISC-V-Cache/Src/Verilog/IDSegReg.v,,HarzardUnit,,xil_defaultlib,F:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+E:/RISC-V/RISC-V-Cache/Src/Verilog/IDSegReg.v,1557787648,verilog,,E:/RISC-V/RISC-V-Cache/Src/Verilog/IFSegReg.v,,IDSegReg,,xil_defaultlib,F:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+E:/RISC-V/RISC-V-Cache/Src/Verilog/IFSegReg.v,1557787648,verilog,,E:/RISC-V/RISC-V-Cache/Src/Verilog/ImmOperandUnit.v,,IFSegReg,,xil_defaultlib,F:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+E:/RISC-V/RISC-V-Cache/Src/Verilog/ImmOperandUnit.v,1557787648,verilog,,E:/RISC-V/RISC-V-Cache/Src/Verilog/InstructionRamNoCache.v,E:/RISC-V/RISC-V-Cache/Src/Verilog/Parameters.v,ImmOperandUnit,,xil_defaultlib,F:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+E:/RISC-V/RISC-V-Cache/Src/Verilog/InstructionRam.sv,1558274431,systemVerilog,,E:/RISC-V/RISC-V-Cache/Src/Verilog/cache.sv,,InstructionRam,,xil_defaultlib,F:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+E:/RISC-V/RISC-V-Cache/Src/Verilog/InstructionRamNoCache.v,1557787648,verilog,,E:/RISC-V/RISC-V-Cache/Src/Verilog/MEMSegReg.v,,InstructionRamNoCache,,xil_defaultlib,F:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+E:/RISC-V/RISC-V-Cache/Src/Verilog/MEMSegReg.v,1557787648,verilog,,E:/RISC-V/RISC-V-Cache/Src/Verilog/RV32Core.v,,MEMSegReg,,xil_defaultlib,F:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+E:/RISC-V/RISC-V-Cache/Src/Verilog/Parameters.v,1557787648,verilog,,,,,,,,,,,,
+E:/RISC-V/RISC-V-Cache/Src/Verilog/RV32Core.v,1557787648,verilog,,E:/RISC-V/RISC-V-Cache/Src/Verilog/RegisterFile.v,,RV32Core,,xil_defaultlib,F:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+E:/RISC-V/RISC-V-Cache/Src/Verilog/RegisterFile.v,1557787648,verilog,,E:/RISC-V/RISC-V-Cache/Src/Verilog/WBSegReg.v,,RegisterFile,,xil_defaultlib,F:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+E:/RISC-V/RISC-V-Cache/Src/Verilog/WBSegReg.v,1558934793,verilog,,,,WBSegReg,,xil_defaultlib,F:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+E:/RISC-V/RISC-V-Cache/Src/Verilog/cache.sv,1558933756,systemVerilog,,E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv,,cache,,xil_defaultlib,F:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv,1557787648,systemVerilog,,E:/RISC-V/RISC-V-Cache/Src/Verilog/mem.sv,,main_mem,,xil_defaultlib,F:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+E:/RISC-V/RISC-V-Cache/Src/Verilog/mem.sv,1558274405,systemVerilog,,,,mem,,xil_defaultlib,F:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,

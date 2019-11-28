@@ -1,0 +1,4 @@
+v1.0
+	完整实现RISC-V 32I，3个testAll测试均通过
+v.1.1
+	修改了Parameters.v的部分定义，重写ControlUnit.v，使表达更加精简，核心代码不超过50行

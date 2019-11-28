@@ -1,0 +1,16 @@
+
+btb.om:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00010054 <_start>:
+   10054:	00000293          	li	t0,0
+   10058:	00000313          	li	t1,0
+   1005c:	06500393          	li	t2,101
+
+00010060 <for>:
+   10060:	00530333          	add	t1,t1,t0
+   10064:	00128293          	addi	t0,t0,1
+   10068:	fe729ce3          	bne	t0,t2,10060 <for>
+   1006c:	00130313          	addi	t1,t1,1

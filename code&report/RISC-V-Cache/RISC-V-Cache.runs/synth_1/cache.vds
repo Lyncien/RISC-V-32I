@@ -1,0 +1,574 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon May 27 13:09:28 2019
+# Process ID: 1036
+# Current directory: E:/RISC-V/RISC-V-Cache/RISC-V-Cache.runs/synth_1
+# Command line: vivado.exe -log cache.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cache.tcl
+# Log file: E:/RISC-V/RISC-V-Cache/RISC-V-Cache.runs/synth_1/cache.vds
+# Journal file: E:/RISC-V/RISC-V-Cache/RISC-V-Cache.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source cache.tcl -notrace
+Command: synth_design -top cache -part xa7a50tcpg236-2I
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xa7a50t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xa7a50t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 37716 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 331.453 ; gain = 100.637
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'cache' [E:/RISC-V/RISC-V-Cache/Src/Verilog/cache.sv:3]
+	Parameter LINE_ADDR_LEN bound to: 5 - type: integer 
+	Parameter SET_ADDR_LEN bound to: 2 - type: integer 
+	Parameter TAG_ADDR_LEN bound to: 6 - type: integer 
+	Parameter WAY_CNT bound to: 3 - type: integer 
+	Parameter MEM_ADDR_LEN bound to: 8 - type: integer 
+	Parameter UNUSED_ADDR_LEN bound to: 17 - type: integer 
+	Parameter LINE_SIZE bound to: 32 - type: integer 
+	Parameter SET_SIZE bound to: 4 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/RISC-V/RISC-V-Cache/Src/Verilog/cache.sv:71]
+INFO: [Synth 8-638] synthesizing module 'main_mem' [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:2]
+	Parameter LINE_ADDR_LEN bound to: 5 - type: integer 
+	Parameter ADDR_LEN bound to: 8 - type: integer 
+	Parameter RD_CYCLE bound to: 50 - type: integer 
+	Parameter WR_CYCLE bound to: 50 - type: integer 
+	Parameter LINE_SIZE bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'mem' [E:/RISC-V/RISC-V-Cache/Src/Verilog/mem.sv:1]
+	Parameter ADDR_LEN bound to: 13 - type: integer 
+	Parameter MEM_SIZE bound to: 8192 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mem' (1#1) [E:/RISC-V/RISC-V-Cache/Src/Verilog/mem.sv:1]
+WARNING: [Synth 8-5788] Register rd_delay_reg in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:36]
+WARNING: [Synth 8-5788] Register wr_delay_reg in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:37]
+WARNING: [Synth 8-5788] Register rd_line_reg[0] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_reg[1] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_reg[2] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_reg[3] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_reg[4] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_reg[5] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_reg[6] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_reg[7] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_reg[8] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_reg[9] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_reg[10] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_reg[11] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_reg[12] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_reg[13] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_reg[14] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_reg[15] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_reg[16] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_reg[17] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_reg[18] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_reg[19] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_reg[20] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_reg[21] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_reg[22] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_reg[23] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_reg[24] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_reg[25] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_reg[26] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_reg[27] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_reg[28] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_reg[29] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_reg[30] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_reg[31] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_latch_reg[0] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_latch_reg[1] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_latch_reg[2] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_latch_reg[3] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_latch_reg[4] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_latch_reg[5] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_latch_reg[6] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_latch_reg[7] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_latch_reg[8] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_latch_reg[9] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_latch_reg[10] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_latch_reg[11] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_latch_reg[12] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_latch_reg[13] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_latch_reg[14] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_latch_reg[15] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_latch_reg[16] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_latch_reg[17] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_latch_reg[18] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_latch_reg[19] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_latch_reg[20] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_latch_reg[21] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_latch_reg[22] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_latch_reg[23] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_latch_reg[24] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_latch_reg[25] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_latch_reg[26] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_latch_reg[27] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_latch_reg[28] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_latch_reg[29] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_latch_reg[30] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_latch_reg[31] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:87]
+INFO: [Synth 8-256] done synthesizing module 'main_mem' (2#1) [E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv:2]
+WARNING: [Synth 8-5788] Register dirty_reg[0] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/cache.sv:62]
+WARNING: [Synth 8-5788] Register dirty_reg[1] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/cache.sv:62]
+WARNING: [Synth 8-5788] Register dirty_reg[2] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/cache.sv:62]
+WARNING: [Synth 8-5788] Register dirty_reg[3] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/cache.sv:62]
+WARNING: [Synth 8-5788] Register valid_reg[0] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/cache.sv:63]
+WARNING: [Synth 8-5788] Register valid_reg[1] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/cache.sv:63]
+WARNING: [Synth 8-5788] Register valid_reg[2] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/cache.sv:63]
+WARNING: [Synth 8-5788] Register valid_reg[3] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/cache.sv:63]
+WARNING: [Synth 8-5788] Register cache_mem_reg[0][0] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/cache.sv:75]
+WARNING: [Synth 8-5788] Register cache_mem_reg[0][1] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/cache.sv:75]
+WARNING: [Synth 8-5788] Register cache_mem_reg[0][2] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/cache.sv:75]
+WARNING: [Synth 8-5788] Register cache_mem_reg[0][3] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/cache.sv:75]
+WARNING: [Synth 8-5788] Register cache_mem_reg[0][4] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/cache.sv:75]
+WARNING: [Synth 8-5788] Register cache_mem_reg[0][5] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/cache.sv:75]
+WARNING: [Synth 8-5788] Register cache_mem_reg[0][6] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/cache.sv:75]
+WARNING: [Synth 8-5788] Register cache_mem_reg[0][7] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/cache.sv:75]
+WARNING: [Synth 8-5788] Register cache_mem_reg[0][8] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/cache.sv:75]
+WARNING: [Synth 8-5788] Register cache_mem_reg[0][9] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/cache.sv:75]
+WARNING: [Synth 8-5788] Register cache_mem_reg[0][10] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/cache.sv:75]
+WARNING: [Synth 8-5788] Register cache_mem_reg[0][11] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/cache.sv:75]
+WARNING: [Synth 8-5788] Register cache_mem_reg[0][12] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/cache.sv:75]
+WARNING: [Synth 8-5788] Register cache_mem_reg[0][13] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/cache.sv:75]
+WARNING: [Synth 8-5788] Register cache_mem_reg[0][14] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/cache.sv:75]
+WARNING: [Synth 8-5788] Register cache_mem_reg[0][15] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/cache.sv:75]
+WARNING: [Synth 8-5788] Register cache_mem_reg[0][16] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/cache.sv:75]
+WARNING: [Synth 8-5788] Register cache_mem_reg[0][17] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/cache.sv:75]
+WARNING: [Synth 8-5788] Register cache_mem_reg[0][18] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/cache.sv:75]
+WARNING: [Synth 8-5788] Register cache_mem_reg[0][19] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/cache.sv:75]
+WARNING: [Synth 8-5788] Register cache_mem_reg[0][20] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/cache.sv:75]
+WARNING: [Synth 8-5788] Register cache_mem_reg[0][21] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/cache.sv:75]
+WARNING: [Synth 8-5788] Register cache_mem_reg[0][22] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/cache.sv:75]
+WARNING: [Synth 8-5788] Register cache_mem_reg[0][23] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/cache.sv:75]
+WARNING: [Synth 8-5788] Register cache_mem_reg[0][24] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/cache.sv:75]
+WARNING: [Synth 8-5788] Register cache_mem_reg[0][25] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/RISC-V/RISC-V-Cache/Src/Verilog/cache.sv:75]
+INFO: [Common 17-14] Message 'Synth 8-5788' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-4767] Trying to implement RAM 'cache_tags_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
+RAM "cache_tags_reg" dissolved into registers
+INFO: [Synth 8-256] done synthesizing module 'cache' (3#1) [E:/RISC-V/RISC-V-Cache/Src/Verilog/cache.sv:3]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[31]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[30]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[29]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[28]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[27]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[26]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[25]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[24]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[23]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[22]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[21]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[20]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[19]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[18]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[17]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[16]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[15]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[1]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 421.301 ; gain = 190.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 421.301 ; gain = 190.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xa7a50tcpg236-2I
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 421.301 ; gain = 190.484
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xa7a50tcpg236-2I
+INFO: [Synth 8-5546] ROM "rd_line_latch_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rd_line_latch_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rd_line_latch_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rd_line_latch_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rd_line_latch_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rd_line_latch_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rd_line_latch_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rd_line_latch_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rd_line_latch_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rd_line_latch_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rd_line_latch_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rd_line_latch_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rd_line_latch_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rd_line_latch_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rd_line_latch_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rd_line_latch_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rd_line_latch_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rd_line_latch_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rd_line_latch_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rd_line_latch_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rd_line_latch_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rd_line_latch_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rd_line_latch_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rd_line_latch_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rd_line_latch_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rd_line_latch_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rd_line_latch_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rd_line_latch_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rd_line_latch_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rd_line_latch_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rd_line_latch_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rd_line_latch_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'cache_stat_reg' in module 'cache'
+INFO: [Synth 8-5544] ROM "dirty_reg[0]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dirty_reg[0]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dirty_reg[1]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dirty_reg[1]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dirty_reg[2]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dirty_reg[2]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dirty_reg[3]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dirty_reg[3]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "cache_mem_reg[0][0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cache_mem_reg[0][1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cache_mem_reg[0][2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cache_mem_reg[0][3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cache_mem_reg[0][4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cache_mem_reg[0][5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cache_mem_reg[0][6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cache_mem_reg[0][7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cache_mem_reg[0][8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cache_mem_reg[0][9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cache_mem_reg[0][10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cache_mem_reg[0][11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cache_mem_reg[0][12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cache_mem_reg[0][13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cache_mem_reg[0][14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cache_mem_reg[0][15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cache_mem_reg[0][16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cache_mem_reg[0][17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cache_mem_reg[0][18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cache_mem_reg[0][19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cache_mem_reg[0][20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cache_mem_reg[0][21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cache_mem_reg[0][22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cache_mem_reg[0][23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cache_mem_reg[0][24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cache_mem_reg[0][25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cache_mem_reg[0][26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cache_mem_reg[0][27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cache_mem_reg[0][28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cache_mem_reg[0][29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cache_mem_reg[0][30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cache_mem_reg[0][31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "cache_tags" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "cache_stat" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0001 | 00000000000000000000000000000000
+                SWAP_OUT |                             0010 | 00000000000000000000000000000001
+                 SWAP_IN |                             0100 | 00000000000000000000000000000010
+              SWAP_IN_OK |                             1000 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cache_stat_reg' using encoding 'one-hot' in module 'cache'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 520.789 ; gain = 289.973
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 229   
+	               13 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 5     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---RAMs : 
+	             256K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	   4 Input     32 Bit        Muxes := 64    
+	   2 Input     13 Bit        Muxes := 6     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      6 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 223   
+	   4 Input      1 Bit        Muxes := 150   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module cache 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 161   
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 5     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 64    
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      6 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 189   
+	   4 Input      1 Bit        Muxes := 150   
+Module mem 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---RAMs : 
+	             256K Bit         RAMs := 1     
+Module main_mem 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 67    
+	               13 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	   2 Input     13 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 34    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design cache has unconnected port addr[31]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[30]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[29]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[28]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[27]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[26]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[25]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[24]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[23]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[22]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[21]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[20]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[19]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[18]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[17]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[16]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[15]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[1]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 635.973 ; gain = 405.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object   | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|mem:        | ram_cell_reg | 8 K x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 0      | 8      | 
++------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The tale above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:25 . Memory (MB): peak = 635.973 ; gain = 405.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object   | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|mem:        | ram_cell_reg | 8 K x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 0      | 8      | 
++------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance main_mem_instance/mem_inst/ram_cell_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance main_mem_instance/mem_inst/ram_cell_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance main_mem_instance/mem_inst/ram_cell_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance main_mem_instance/mem_inst/ram_cell_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance main_mem_instance/mem_inst/ram_cell_reg_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance main_mem_instance/mem_inst/ram_cell_reg_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance main_mem_instance/mem_inst/ram_cell_reg_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance main_mem_instance/mem_inst/ram_cell_reg_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:30 . Memory (MB): peak = 646.297 ; gain = 415.480
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6064] Net \main_mem_instance/mem_wr_req_reg_n_0  is driving 32 big block pins (URAM, BRAM and DSP loads). Created 4 replicas of its driver. 
+WARNING: [Synth 8-3332] Sequential element (main_mem_instance/mem_wr_req_reg) is unused and will be removed from module cache.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:32 . Memory (MB): peak = 646.297 ; gain = 415.480
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:32 . Memory (MB): peak = 646.297 ; gain = 415.480
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:32 . Memory (MB): peak = 646.297 ; gain = 415.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:32 . Memory (MB): peak = 646.297 ; gain = 415.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:34 . Memory (MB): peak = 646.297 ; gain = 415.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:34 . Memory (MB): peak = 646.297 ; gain = 415.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    16|
+|3     |LUT1     |     8|
+|4     |LUT2     |    67|
+|5     |LUT3     |   156|
+|6     |LUT4     |  2089|
+|7     |LUT5     |  2092|
+|8     |LUT6     |   833|
+|9     |MUXF7    |   185|
+|10    |MUXF8    |    28|
+|11    |RAMB36E1 |     8|
+|12    |FDCE     |  1141|
+|13    |FDPE     |     1|
+|14    |FDRE     |  2138|
+|15    |FDSE     |  4096|
+|16    |IBUF     |    49|
+|17    |OBUF     |    33|
++------+---------+------+
+
+Report Instance Areas: 
++------+--------------------+---------+------+
+|      |Instance            |Module   |Cells |
++------+--------------------+---------+------+
+|1     |top                 |         | 12941|
+|2     |  main_mem_instance |main_mem |  3817|
+|3     |    mem_inst        |mem      |     8|
++------+--------------------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:34 . Memory (MB): peak = 646.297 ; gain = 415.480
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 243 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:34 . Memory (MB): peak = 646.297 ; gain = 415.480
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:34 . Memory (MB): peak = 646.297 ; gain = 415.480
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 286 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+102 Infos, 140 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:40 . Memory (MB): peak = 708.426 ; gain = 481.648
+INFO: [Common 17-1381] The checkpoint 'E:/RISC-V/RISC-V-Cache/RISC-V-Cache.runs/synth_1/cache.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file cache_utilization_synth.rpt -pb cache_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.096 . Memory (MB): peak = 708.426 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon May 27 13:10:13 2019...

@@ -51,6 +51,7 @@ int main(int argc, char* argv[])
 		bytesToHexstring(tmp+1,1,str+2,2);
 		bytesToHexstring(tmp+2,1,str+4,2);
 		bytesToHexstring(tmp+3,1,str+6,2);
+		str[8] = 0;
 		fprintf(fp2,"%s\n",str);
 		//
 		fread(tmp+3,sizeof(char),1,fp1);

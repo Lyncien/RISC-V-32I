@@ -1,0 +1,22 @@
+
+bht.om:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00010054 <_start>:
+   10054:	00000293          	li	t0,0
+   10058:	00000313          	li	t1,0
+   1005c:	00000393          	li	t2,0
+   10060:	00a00e13          	li	t3,10
+
+00010064 <for_out>:
+   10064:	00138393          	addi	t2,t2,1
+
+00010068 <for_in>:
+   10068:	00530333          	add	t1,t1,t0
+   1006c:	00128293          	addi	t0,t0,1
+   10070:	ffc29ce3          	bne	t0,t3,10068 <for_in>
+   10074:	00000293          	li	t0,0
+   10078:	ffc396e3          	bne	t2,t3,10064 <for_out>
+   1007c:	00130313          	addi	t1,t1,1

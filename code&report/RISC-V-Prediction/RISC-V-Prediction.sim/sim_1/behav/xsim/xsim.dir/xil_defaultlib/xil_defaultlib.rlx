@@ -1,0 +1,25 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+E:/RISC-V/RISC-V-Prediction/RISC-V-Prediction.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+E:/RISC-V/RISC-V-Prediction/Simulation/testBench.v,1559183690,verilog,,,,testBench,,,,,,,,
+E:/RISC-V/RISC-V-Prediction/Src/ALU.v,1558129340,verilog,,E:/RISC-V/RISC-V-Prediction/Src/BHT.v,E:/RISC-V/RISC-V-Prediction/Src/Parameters.v,ALU,,,,,,,,
+E:/RISC-V/RISC-V-Prediction/Src/BHT.v,1559385783,verilog,,E:/RISC-V/RISC-V-Prediction/Src/BTB.v,,BHT,,,,,,,,
+E:/RISC-V/RISC-V-Prediction/Src/BRAMModule/DataRam.v,1558129340,verilog,,E:/RISC-V/RISC-V-Prediction/Src/EXSegReg.v,,DataRam,,,,,,,,
+E:/RISC-V/RISC-V-Prediction/Src/BRAMModule/InstructionRam.v,1558129340,verilog,,E:/RISC-V/RISC-V-Prediction/Src/MEMSegReg.v,,InstructionRam,,,,,,,,
+E:/RISC-V/RISC-V-Prediction/Src/BTB.v,1559229715,verilog,,E:/RISC-V/RISC-V-Prediction/Src/BranchDecisionMaking.v,,BTB,,,,,,,,
+E:/RISC-V/RISC-V-Prediction/Src/BranchDecisionMaking.v,1558129340,verilog,,E:/RISC-V/RISC-V-Prediction/Src/ControlUnit.v,E:/RISC-V/RISC-V-Prediction/Src/Parameters.v,BranchDecisionMaking,,,,,,,,
+E:/RISC-V/RISC-V-Prediction/Src/ControlUnit.v,1558129340,verilog,,E:/RISC-V/RISC-V-Prediction/Src/DataExt.v,E:/RISC-V/RISC-V-Prediction/Src/Parameters.v,ControlUnit,,,,,,,,
+E:/RISC-V/RISC-V-Prediction/Src/DataExt.v,1558129340,verilog,,E:/RISC-V/RISC-V-Prediction/Src/BRAMModule/DataRam.v,E:/RISC-V/RISC-V-Prediction/Src/Parameters.v,DataExt,,,,,,,,
+E:/RISC-V/RISC-V-Prediction/Src/EXSegReg.v,1559195256,verilog,,E:/RISC-V/RISC-V-Prediction/Src/HarzardUnit.v,,EXSegReg,,,,,,,,
+E:/RISC-V/RISC-V-Prediction/Src/HarzardUnit.v,1559985359,verilog,,E:/RISC-V/RISC-V-Prediction/Src/IDSegReg.v,,HarzardUnit,,,,,,,,
+E:/RISC-V/RISC-V-Prediction/Src/IDSegReg.v,1559195200,verilog,,E:/RISC-V/RISC-V-Prediction/Src/IFSegReg.v,,IDSegReg,,,,,,,,
+E:/RISC-V/RISC-V-Prediction/Src/IFSegReg.v,1558129340,verilog,,E:/RISC-V/RISC-V-Prediction/Src/ImmOperandUnit.v,,IFSegReg,,,,,,,,
+E:/RISC-V/RISC-V-Prediction/Src/ImmOperandUnit.v,1558129340,verilog,,E:/RISC-V/RISC-V-Prediction/Src/BRAMModule/InstructionRam.v,E:/RISC-V/RISC-V-Prediction/Src/Parameters.v,ImmOperandUnit,,,,,,,,
+E:/RISC-V/RISC-V-Prediction/Src/MEMSegReg.v,1558129340,verilog,,E:/RISC-V/RISC-V-Prediction/Src/NPC_Generator.v,,MEMSegReg,,,,,,,,
+E:/RISC-V/RISC-V-Prediction/Src/NPC_Generator.v,1559196446,verilog,,E:/RISC-V/RISC-V-Prediction/Src/RV32Core.v,,NPC_Generator,,,,,,,,
+E:/RISC-V/RISC-V-Prediction/Src/Parameters.v,1558129340,verilog,,,,,,,,,,,,
+E:/RISC-V/RISC-V-Prediction/Src/RV32Core.v,1559988619,verilog,,E:/RISC-V/RISC-V-Prediction/Src/RegisterFile.v,,RV32Core,,,,,,,,
+E:/RISC-V/RISC-V-Prediction/Src/RegisterFile.v,1558129340,verilog,,E:/RISC-V/RISC-V-Prediction/Src/WBSegReg.v,,RegisterFile,,,,,,,,
+E:/RISC-V/RISC-V-Prediction/Src/WBSegReg.v,1558129340,verilog,,E:/RISC-V/RISC-V-Prediction/Simulation/testBench.v,,WBSegReg,,,,,,,,

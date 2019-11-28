@@ -1,0 +1,26 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Src/ALU.v" \
+"../../../../Src/BTB.v" \
+"../../../../Src/BranchDecisionMaking.v" \
+"../../../../Src/ControlUnit.v" \
+"../../../../Src/DataExt.v" \
+"../../../../Src/BRAMModule/DataRam.v" \
+"../../../../Src/EXSegReg.v" \
+"../../../../Src/HarzardUnit.v" \
+"../../../../Src/IDSegReg.v" \
+"../../../../Src/IFSegReg.v" \
+"../../../../Src/ImmOperandUnit.v" \
+"../../../../Src/BRAMModule/InstructionRam.v" \
+"../../../../Src/MEMSegReg.v" \
+"../../../../Src/NPC_Generator.v" \
+"../../../../Src/RV32Core.v" \
+"../../../../Src/RegisterFile.v" \
+"../../../../Src/WBSegReg.v" \
+"../../../../Simulation/testBench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

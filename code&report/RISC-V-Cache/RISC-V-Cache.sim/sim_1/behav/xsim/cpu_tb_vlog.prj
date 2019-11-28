@@ -1,0 +1,30 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "F:/Xilinx/Vivado/2017.4/data/xilinx_vip/include" \
+"../../../../Src/Verilog/ALU.v" \
+"../../../../Src/Verilog/ControlUnit.v" \
+"../../../../Src/Verilog/DataExt.v" \
+"../../../../Src/Verilog/EXSegReg.v" \
+"../../../../Src/Verilog/HarzardUnit.v" \
+"../../../../Src/Verilog/IDSegReg.v" \
+"../../../../Src/Verilog/IFSegReg.v" \
+"../../../../Src/Verilog/ImmOperandUnit.v" \
+"../../../../Src/Verilog/InstructionRamNoCache.v" \
+"../../../../Src/Verilog/MEMSegReg.v" \
+"../../../../Src/Verilog/RV32Core.v" \
+"../../../../Src/Verilog/RegisterFile.v" \
+"../../../../Src/Verilog/WBSegReg.v" \
+
+sv xil_defaultlib  --include "F:/Xilinx/Vivado/2017.4/data/xilinx_vip/include" \
+"../../../../Src/Verilog/InstructionRam.sv" \
+"../../../../Src/Verilog/cache.sv" \
+"../../../../Src/Verilog/main_mem.sv" \
+"../../../../Src/Verilog/mem.sv" \
+
+verilog xil_defaultlib  --include "F:/Xilinx/Vivado/2017.4/data/xilinx_vip/include" \
+"../../../../Src/Testbench/cpu_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

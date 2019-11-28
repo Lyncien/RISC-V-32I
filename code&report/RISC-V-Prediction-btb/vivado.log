@@ -1,0 +1,162 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Jun  1 18:23:15 2019
+# Process ID: 10448
+# Current directory: E:/RISC-V/RISC-V-Prediction-btb
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13724 E:\RISC-V\RISC-V-Prediction-btb\RISC-V-Prediction-btb.xpr
+# Log file: E:/RISC-V/RISC-V-Prediction-btb/vivado.log
+# Journal file: E:/RISC-V/RISC-V-Prediction-btb\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/RISC-V/RISC-V-Prediction-btb/RISC-V-Prediction-btb.xpr
+INFO: [Project 1-313] Project file moved from 'E:/RISC-V/RISC-V-Prediction' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [filemgmt 56-1] IPUserFilesDir: Directory not found as 'E:/RISC-V/RISC-V-Prediction-btb/RISC-V-Prediction-btb.ip_user_files'; using path 'E:/RISC-V/RISC-V-Prediction/RISC-V-Prediction.ip_user_files' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2017.4/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/RISC-V/RISC-V-Prediction-btb/RISC-V-Prediction-btb.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testBench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/RISC-V/RISC-V-Prediction-btb/RISC-V-Prediction-btb.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testBench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/RISC-V/RISC-V-Prediction-btb/Src/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/RISC-V/RISC-V-Prediction-btb/Src/BTB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BTB
+WARNING: [VRFC 10-2019] loop variable declaration is not allowed in this mode of verilog [E:/RISC-V/RISC-V-Prediction-btb/Src/BTB.v:44]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/RISC-V/RISC-V-Prediction-btb/Src/BranchDecisionMaking.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchDecisionMaking
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/RISC-V/RISC-V-Prediction-btb/Src/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/RISC-V/RISC-V-Prediction-btb/Src/DataExt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataExt
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/RISC-V/RISC-V-Prediction-btb/Src/BRAMModule/DataRam.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataRam
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/RISC-V/RISC-V-Prediction-btb/Src/EXSegReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXSegReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/RISC-V/RISC-V-Prediction-btb/Src/HarzardUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HarzardUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/RISC-V/RISC-V-Prediction-btb/Src/IDSegReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDSegReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/RISC-V/RISC-V-Prediction-btb/Src/IFSegReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFSegReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/RISC-V/RISC-V-Prediction-btb/Src/ImmOperandUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmOperandUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/RISC-V/RISC-V-Prediction-btb/Src/BRAMModule/InstructionRam.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionRam
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/RISC-V/RISC-V-Prediction-btb/Src/MEMSegReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMSegReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/RISC-V/RISC-V-Prediction-btb/Src/NPC_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/RISC-V/RISC-V-Prediction-btb/Src/RV32Core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32Core
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/RISC-V/RISC-V-Prediction-btb/Src/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/RISC-V/RISC-V-Prediction-btb/Src/WBSegReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WBSegReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/RISC-V/RISC-V-Prediction-btb/Simulation/testBench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testBench
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/RISC-V/RISC-V-Prediction-btb/RISC-V-Prediction-btb.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/RISC-V/RISC-V-Prediction-btb/RISC-V-Prediction-btb.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: F:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 81107a23b344437093e1d027d5a455fe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testBench_behav xil_defaultlib.testBench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 4 for port AluContrlD [E:/RISC-V/RISC-V-Prediction-btb/Src/RV32Core.v:172]
+WARNING: [VRFC 10-278] actual bit length 4 differs from formal bit length 5 for port AluContrlE [E:/RISC-V/RISC-V-Prediction-btb/Src/RV32Core.v:234]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 3 for port MemToRegE [E:/RISC-V/RISC-V-Prediction-btb/Src/RV32Core.v:328]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.NPC_Generator
+Compiling module xil_defaultlib.IFSegReg
+Compiling module xil_defaultlib.BTB_default
+Compiling module xil_defaultlib.InstructionRam
+Compiling module xil_defaultlib.IDSegReg
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.ImmOperandUnit
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.EXSegReg
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.BranchDecisionMaking
+Compiling module xil_defaultlib.MEMSegReg
+Compiling module xil_defaultlib.DataRam
+Compiling module xil_defaultlib.WBSegReg
+Compiling module xil_defaultlib.DataExt
+Compiling module xil_defaultlib.HarzardUnit
+Compiling module xil_defaultlib.RV32Core
+Compiling module xil_defaultlib.testBench
+WARNING: [XSIM 43-3373] "E:/RISC-V/RISC-V-Prediction-btb/Simulation/testBench.v" Line 83. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+WARNING: [XSIM 43-3373] "E:/RISC-V/RISC-V-Prediction-btb/Simulation/testBench.v" Line 97. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+WARNING: [XSIM 43-3373] "E:/RISC-V/RISC-V-Prediction-btb/Simulation/testBench.v" Line 108. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+WARNING: [XSIM 43-3373] "E:/RISC-V/RISC-V-Prediction-btb/Simulation/testBench.v" Line 122. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testBench_behav
+
+****** Webtalk v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source E:/RISC-V/RISC-V-Prediction-btb/RISC-V-Prediction-btb.sim/sim_1/behav/xsim/xsim.dir/testBench_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Jun  1 18:24:24 2019...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 778.074 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/RISC-V/RISC-V-Prediction-btb/RISC-V-Prediction-btb.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testBench_behav -key {Behavioral:sim_1:Functional:testBench} -tclbatch {testBench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source testBench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Initialing reg values...
+Loading DataRam Content from file...
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testBench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 782.039 ; gain = 3.965
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 22 us
+Initialing reg values...
+Loading DataRam Content from file...
+Loading InstRam Content from file...
+Start Instruction Execution!
+run 22 us
+open_wave_config {E:/RISC-V/RISC-V-Prediction-btb/testBench_behav2.wcfg}
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 22 us
+Initialing reg values...
+Loading DataRam Content from file...
+Loading InstRam Content from file...
+Start Instruction Execution!
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 864.707 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Jun  1 18:38:49 2019...

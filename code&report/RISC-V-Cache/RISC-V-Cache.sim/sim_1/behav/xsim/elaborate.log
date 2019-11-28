@@ -1,0 +1,35 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: F:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 28de78bcfd5d4fa5bc31e089a1cb78bf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/RISC-V/RISC-V-Cache/Src/Verilog/InstructionRam.sv" Line 2. Module InstructionRam doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/RISC-V/RISC-V-Cache/Src/Verilog/ControlUnit.v" Line 2. Module ControlUnit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/RISC-V/RISC-V-Cache/Src/Verilog/ALU.v" Line 7. Module ALU doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/RISC-V/RISC-V-Cache/Src/Verilog/cache.sv" Line 3. Module cache(LINE_ADDR_LEN=4,SET_ADDR_LEN=3,WAY_CNT=0) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/RISC-V/RISC-V-Cache/Src/Verilog/main_mem.sv" Line 2. Module main_mem(LINE_ADDR_LEN=4,ADDR_LEN=9) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/RISC-V/RISC-V-Cache/Src/Verilog/mem.sv" Line 1. Module mem(ADDR_LEN=13) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.IFSegReg
+Compiling module xil_defaultlib.InstructionRam
+Compiling module xil_defaultlib.InstructionRamNoCache
+Compiling module xil_defaultlib.IDSegReg
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.DataExt
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.ImmOperandUnit
+Compiling module xil_defaultlib.EXSegReg
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.MEMSegReg
+Compiling module xil_defaultlib.mem(ADDR_LEN=13)
+Compiling module xil_defaultlib.main_mem(LINE_ADDR_LEN=4,ADDR_LE...
+Compiling module xil_defaultlib.cache(LINE_ADDR_LEN=4,SET_ADDR_L...
+Compiling module xil_defaultlib.WBSegReg
+Compiling module xil_defaultlib.HarzardUnit
+Compiling module xil_defaultlib.RV32Core
+Compiling module xil_defaultlib.cpu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_tb_behav

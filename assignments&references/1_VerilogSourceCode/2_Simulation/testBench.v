@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: USTC ESLAB(Embeded System Lab)
+// Company: USTC ESLAB embeded System Lab
 // Engineer: Haojun Xia
 // Create Date: 2019/02/08
 // Design Name: RISCV-Pipline CPU
@@ -127,7 +127,7 @@ module testBench(
         $display("Finish Instruction Execution!"); 
         
         $display("Saving DataRam Content to file..."); 
-        CPU_Debug_DataRAM_A2 = 32'b0;
+        CPU_Debug_DataRAM_A2 = 32'hfffffffc;
         #10
         SaveDataRamFile = $fopen(`DataRamContentSavePath,"w");
         if(SaveDataRamFile==0)
@@ -139,8 +139,10 @@ module testBench(
             for(i=0;i<`BRAMWORDS;i=i+1)
                 begin
                 @(posedge CPU_CLK);
-                $fwrite(SaveDataRamFile,"%4d\t%8h\t%4d\t%8h\t%4d\n",i,CPU_Debug_DataRAM_A2,CPU_Debug_DataRAM_A2,CPU_Debug_DataRAM_RD2,CPU_Debug_DataRAM_RD2);
                 CPU_Debug_DataRAM_A2 = CPU_Debug_DataRAM_A2+4;
+                @(posedge CPU_CLK);
+                @(negedge CPU_CLK);
+                $fwrite(SaveDataRamFile,"%4d\t%8h\t%4d\t%8h\t%4d\n",i,CPU_Debug_DataRAM_A2,CPU_Debug_DataRAM_A2,CPU_Debug_DataRAM_RD2,CPU_Debug_DataRAM_RD2);
                 end
             $fclose(SaveDataRamFile);
         end
@@ -151,15 +153,17 @@ module testBench(
             $display("Failed to Open %s, Do Not Save InstRam values to file!",`InstRamContentSavePath);
         else
         begin
-            CPU_Debug_InstRAM_A2 = 32'b0;
+            CPU_Debug_InstRAM_A2 = 32'hfffffffc;
             #10
             $fwrite(SaveInstRamFile,"i\tAddr\tAddr\tData\tData\n");
             #10
             for(i=0;i<`BRAMWORDS;i=i+1)
                 begin
                 @(posedge CPU_CLK);
-                $fwrite(SaveInstRamFile,"%4d\t%8h\t%4d\t%8h\t%4d\n",i,CPU_Debug_InstRAM_A2,CPU_Debug_InstRAM_A2,CPU_Debug_InstRAM_RD2,CPU_Debug_InstRAM_RD2);
                 CPU_Debug_InstRAM_A2 = CPU_Debug_InstRAM_A2+4;
+                @(posedge CPU_CLK);
+                @(negedge CPU_CLK);
+                $fwrite(SaveInstRamFile,"%4d\t%8h\t%4d\t%8h\t%4d\n",i,CPU_Debug_InstRAM_A2,CPU_Debug_InstRAM_A2,CPU_Debug_InstRAM_RD2,CPU_Debug_InstRAM_RD2);
                 end
             $fclose(SaveInstRamFile);      
         end      

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat May 25 15:34:48 2019
+# Process ID: 16004
+# Current directory: E:/RISC-V/RISC-V-Cache/RISC-V-Cache.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source E:/RISC-V/RISC-V-Cache/RISC-V-Cache.sim/sim_1/behav/xsim/xsim.dir/cpu_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: E:/RISC-V/RISC-V-Cache/RISC-V-Cache.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: E:/RISC-V/RISC-V-Cache/RISC-V-Cache.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source E:/RISC-V/RISC-V-Cache/RISC-V-Cache.sim/sim_1/behav/xsim/xsim.dir/cpu_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 52.348 ; gain = 1.254
+INFO: [Common 17-206] Exiting Webtalk at Sat May 25 15:35:01 2019...

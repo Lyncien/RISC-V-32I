@@ -14,7 +14,8 @@ module HarzardUnit(
     input wire BranchE, JalrE, JalD, 
     input wire [4:0] Rs1D, Rs2D, Rs1E, Rs2E, RdE, RdM, RdW,
     input wire [1:0] RegReadE,
-    input wire [2:0] MemToRegE, RegWriteM, RegWriteW,
+    input wire MemToRegE,
+    input wire [2:0] RegWriteM, RegWriteW,
     output reg StallF, FlushF, StallD, FlushD, StallE, FlushE, StallM, FlushM, StallW, FlushW,
     output reg [1:0] Forward1E, Forward2E
     );

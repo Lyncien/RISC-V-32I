@@ -38,19 +38,19 @@ Objdump: $(OBJDUMP)
 Bin2Data: ./Utils/Bin2Data.c
 	gcc -o Bin2Data ./Utils/Bin2Data.c
 %.o: %.S
-	./Utils/riscv32-unknown-elf-as $< -o $@ -march=rv32i
+	./Utils/riscv32-elf-as $< -o $@ -march=rv32i
 %.om: %.o
-	./Utils/riscv32-unknown-elf-ld $< -o $@
+	./Utils/riscv32-elf-ld $< -o $@
 %-Data.bin: %.om
-	./Utils/riscv32-unknown-elf-objcopy -O binary $< $@
+	./Utils/riscv32-elf-objcopy -O binary $< $@
 %-Inst.bin: %.om
-	./Utils/riscv32-unknown-elf-objcopy --dump-section .text=$@ $<
+	./Utils/riscv32-elf-objcopy --dump-section .text=$@ $<
 %.data: %-Data.bin Bin2Data
 	./Bin2Data $< $@
 %.inst: %-Inst.bin Bin2Data
 	./Bin2Data $< $@
 %.txt: %.om
-	./Utils/riscv32-unknown-elf-objdump -d $< > $@
+	./Utils/riscv32-elf-objdump -d $< > $@
 cleanTMP:
 	-rm -f *.om *.o *.bin Bin2Data
 clean:
